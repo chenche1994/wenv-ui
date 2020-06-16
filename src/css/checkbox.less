@@ -1,0 +1,54 @@
+.wenv-checkbox {
+  position: relative;
+  height: 12px;
+  width: 12px;
+  box-sizing: border-box;
+  background-color: #fff;
+  border: 1px solid #bbb;
+  border-radius: 2px;
+  flex-shrink: 0;
+  cursor: pointer;
+  transition: border-color 0.2s ease-in-out;
+
+  &:hover {
+    border-color: #377ff6;
+  }
+
+  &[data-selected='true'] {
+    background-color: #108ee9;
+    border-color: #377ff6;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 3px;
+      height: 6px;
+      left: 3px;
+      border: 2px solid #ffffff;
+      border-top: 0;
+      border-left: 0;
+      background-color: #108ee9;
+      transform: rotate(45deg);
+    }
+  }
+
+  &[data-indeterminate='true'] {
+    background-color: #108ee9;
+    border-color: #377ff6;
+    position: relative;
+
+    &::after {
+      content: '';
+      width: 6px;
+      border-top: 2px solid #ffffff;
+      position: absolute;
+      top: 4px;
+      left: 2px;
+    }
+  }
+
+  &[disabled='true'] {
+    
+  }
+}

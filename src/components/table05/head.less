@@ -1,0 +1,62 @@
+.wenv-table-05-head {
+  @border-color: #e2e2e4;
+  display: flex;
+  overflow: hidden;
+  flex-shrink: 0;
+  background-color: #eaeef1;;
+
+  .wenv-table-05-head-cell {
+    display: flex;
+    flex-direction: column;
+
+    .wenv-table-05-head-cell-title {
+      display: flex;
+      align-items: center;
+      box-sizing: border-box;
+      border-right: 1px solid @border-color;
+      border-bottom: 1px solid @border-color;
+      font-size: 13px;
+      color: #7f868c;
+      padding: 0 10px;
+
+      .wenv-table-05-head-cell-title-sort {
+        cursor: pointer;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        width: 12px;
+        height: 12px;
+        margin-left: 4px;
+
+        &:hover {
+          svg {
+            fill: #333;
+          }
+        }
+
+        &[data-type='asc'] {
+          svg[data-type='asc'] {
+            fill: #009bff;
+          }
+        }
+
+        &[data-type='desc'] {
+          svg[data-type='desc'] {
+            fill: #009bff;
+          }
+        }
+
+        svg {
+          width: 6px;
+          height: 6px;
+          fill: #7f868c;
+          pointer-events: none;
+        }
+      }
+    }
+
+    .wenv-table-05-head-cell-children {
+      display: flex;
+    }
+  }
+}

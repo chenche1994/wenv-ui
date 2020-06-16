@@ -1,0 +1,27 @@
+@import '../main.less';
+
+svg.wenv-svg-btn,
+i.wenv-icon-btn {
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  color: @font-color-light;
+
+  &[disabled] {
+    pointer-events: none;
+  }
+
+  &:hover {
+    color: @font-color-normal;
+  }
+}
+
+svg.wenv-svg-btn {
+  width: 14px;
+  height: 14px;
+  fill: currentColor;
+  overflow: hidden;
+}
+
+i.wenv-icon-btn {
+  font-size: 14px;
+}

@@ -1,0 +1,56 @@
+@import '../main.less';
+
+@selected-color: @color-primary;
+
+.wenv-radio {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  font-family: @font-family;
+  color: @font-color-normal;
+  line-height: 28px;
+  height: 28px;
+  overflow: hidden;
+  vertical-align: middle;
+
+  &:hover {
+    .wenv-radio-point {
+      border-color: @selected-color;
+      transition: border-color 0.2s ease-in-out;
+    }
+  }
+
+  .wenv-radio-point {
+    position: relative;
+    display: inline-block;
+    height: 14px;
+    width: 14px;
+    box-sizing: border-box;
+    border: @common-border;
+    flex-shrink: 0;
+    background-color: #fff;
+  }
+
+  .wenv-radio-label {
+    font-size: 14px;
+    margin-left: 10px;
+  }
+
+  &[checked] .wenv-radio-point {
+    border-color: @selected-color;
+  }
+
+  &[disabled] {
+    pointer-events: none;
+
+    .wenv-radio-point {
+      border-color: @common-border-color !important;
+      background-color: #f7f7f7 !important;
+    }
+
+    .wenv-radio-label {
+      color: #aaaaaa !important;
+    }
+  }
+}

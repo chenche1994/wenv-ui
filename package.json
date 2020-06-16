@@ -1,0 +1,65 @@
+{
+  "name": "@wenv/ui",
+  "version": "1.85.0",
+  "author": "ChenLijia",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build --report",
+    "test:unit": "vue-cli-service test:unit",
+    "test:e2e": "vue-cli-service test:e2e",
+    "lint": "vue-cli-service lint",
+    "publish2": "npm run release && npm publish",
+    "release": "standard-version",
+    "serve:build": "vue-cli-service serve --mode production"
+  },
+  "peerDependencies": {
+    "animate.css": "^3.7.2",
+    "blueimp-md5": "^2.12.0",
+    "core-js": "^3.4.3",
+    "css-element-queries": "^1.2.2",
+    "dayjs": "^1.8.18",
+    "lodash-es": "^4.17.15",
+    "perfect-scrollbar": "^1.4.0",
+    "tippy.js": "^4.3.5",
+    "uuid": "^3.3.3",
+    "vue": "^2.6.11",
+    "xml-loader": "^1.2.1"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^8.2.0",
+    "@commitlint/config-conventional": "^8.2.0",
+    "@vue/cli-plugin-babel": "^4.1.1",
+    "@vue/cli-plugin-e2e-nightwatch": "^4.1.1",
+    "@vue/cli-plugin-eslint": "^4.1.1",
+    "@vue/cli-plugin-unit-jest": "^4.1.1",
+    "@vue/cli-service": "^4.1.1",
+    "@vue/eslint-config-airbnb": "^4.0.1",
+    "@vue/test-utils": "^1.0.0-beta.29",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-eslint": "^10.0.3",
+    "babel-jest": "^24.9.0",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.2.3",
+    "husky": "^3.0.9",
+    "less": "^3.10.3",
+    "less-loader": "^5.0.0",
+    "standard-version": "^6.0.1",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "engines": {
+    "node": ">=10.16.0",
+    "npm": ">=6.9.0"
+  },
+  "dependencies": {
+    "animate.css": "^3.7.2",
+    "blueimp-md5": "^2.12.0",
+    "core-js": "^3.6.1",
+    "css-element-queries": "^1.2.2",
+    "dayjs": "^1.8.18",
+    "lodash-es": "^4.17.15",
+    "perfect-scrollbar": "^1.4.0",
+    "tippy.js": "^5.1.3",
+    "vue": "^2.6.11",
+    "xml-loader": "^1.2.1"
+  }
+}

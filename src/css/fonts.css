@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: url('../assets/fonts/HelveticaNeue-Roman.ttf');
+}
+
+@font-face {
+  font-family: 'Source Han Sans CN';
+  src: url('../assets/fonts/SourceHanSansCN-Regular.ttf');
+}

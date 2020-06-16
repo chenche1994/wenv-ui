@@ -1,0 +1,47 @@
+@import '../main.less';
+
+.tippy-tooltip.tomato-theme {
+  background-color: #fff;
+  color: @font-color-normal;
+  border-radius: 2px;
+  border: 1px solid #e2e2e4;
+  text-align: left;
+  font-size: 13px;
+  padding: 12px;
+}
+
+.tippy-tooltip.tomato-theme[x-placement^='top'] .tippy-arrow {
+  border-top-color: #e2e2e4;
+  bottom: -8px;
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -8px;
+    left: -7px;
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 7px solid #fff;
+  }
+}
+
+.tippy-tooltip.tomato-theme[x-placement^='bottom'] .tippy-arrow {
+  border-bottom-color: #e2e2e4;
+  top: -8px;
+
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 1px;
+    left: -7px;
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid #fff;
+  }
+}

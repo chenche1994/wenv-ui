@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
+    <title>wenv-ui</title>
+    <style type="text/css">
+      table {
+        /* display: table; */
+        table-layout: fixed;
+        box-sizing: border-box;
+        /* border-collapse: collapse; */
+        border-spacing: 0px;
+        width: 350px;
+        /* border-left: 1px solid red; */
+        /* border-top: 1px solid red;
+        border-left: 1px solid red; */
+      }
+      tr {
+        /* display: table-row; */
+      }
+      th {
+        /* display: table-cell; */
+        box-sizing: border-box;
+        border-bottom: 1px solid pink;
+        border-right: 1px solid pink;
+        /* border: 1px solid pink; */
+        text-align: right;
+        padding: 0;
+      }
+      td {
+        /* display: table-cell; */
+        box-sizing: border-box;
+        border-bottom: 1px solid blue;
+        border-right: 1px solid blue;
+        /* border: 1px solid blue; */
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        text-align: right;
+        height: 48px;
+        padding: 0;
+      }
+
+      .d1 {
+        width: 700px;
+        display: inline-flex;
+        /* height: 50px; */
+        box-sizing: border-box;
+        /* border-top: 1px solid red;
+        border-left: 1px solid red; */
+        /* box-shadow: 2px 0 6px -2px rgba(0, 0, 0); */
+        /* margin-right: -1px; */
+        flex-shrink: 0;
+        overflow: hidden;
+        /* outline: 1px solid red; */
+        /* box-shadow: -1px -1px 1px red; */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <noscript>
+      <strong>We're sorry but wenv-ui doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div> -->
+    <!-- built files will be auto injected -->
+    <div id="app">
+      <div class="d1">
+        <table class="t1">
+          <colgroup>
+            <col style="width: 50px;" />
+            <col style="width: 50px;" />
+            <col style="width: 50px;" />
+            <col style="width: 50px;" />
+            <col style="width: 50px;" />
+            <col style="width: 50px;" />
+            <col style="width: 50px;" />
+          </colgroup>
+          <thead>
+            <tr>
+              <th rowspan="3" colspan="1">ISBN</th>
+              <th rowspan="1" colspan="2">Title</th>
+              <th rowspan="3" colspan="1">Price</th>
+              <th rowspan="1" colspan="3">Title</th>
+            </tr>
+            <tr>
+              <th rowspan="2" colspan="1">签约</th>
+              <th rowspan="2" colspan="1">新增</th>
+              <th rowspan="2" colspan="1">稳定</th>
+              <th rowspan="1" colspan="2">预警</th>
+            </tr>
+            <tr>
+              <th rowspan="1" colspan="1">预警</th>
+              <th rowspan="1" colspan="1">一级</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>3476896</td>
+              <td>My first HTML</td>
+              <td>$53</td>
+              <td>3476896</td>
+              <td>My first HTML</td>
+              <td>$53</td>
+              <td>$53</td>
+            </tr>
+            <tr>
+              <td>2489604</td>
+              <td>My first CSS</td>
+              <td>$47</td>
+              <td>2489604</td>
+              <td>My first CSS</td>
+              <td>$47</td>
+              <td>$47</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

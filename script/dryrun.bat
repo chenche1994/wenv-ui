@@ -1,0 +1,1 @@
+npm run release -- --dry-run > dryrun.log

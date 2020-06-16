@@ -1,0 +1,35 @@
+.wenv-table-05-body {
+  @border-color: #e2e2e4;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+
+  .wenv-table-05-body-rows-wrapper {
+    position: relative;
+  }
+
+  .wenv-table-05-body-row {
+    display: flex;
+    position: relative;
+
+    .wenv-table-05-body-row-cell {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 10px;
+      box-sizing: border-box;
+      border-right: 1px solid @border-color;
+      border-bottom: 1px solid @border-color;
+      flex-shrink: 0;
+
+      .wenv-table-05-body-row-cell-text {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        font-size: 13px;
+        color: #333;
+      }
+    }
+  }
+}

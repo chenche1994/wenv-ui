@@ -1,0 +1,1 @@
+npm run publish2 > publish.log

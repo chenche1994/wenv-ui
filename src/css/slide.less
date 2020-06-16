@@ -1,0 +1,83 @@
+@keyframes wenvuSlideDownIn {
+  0% {
+    opacity: 0;
+    max-height: 0px;
+    transform-origin: center top;
+  }
+  100% {
+    opacity: 1;
+    max-height: 50px;
+    transform-origin: center top;
+  }
+}
+
+@keyframes wenvuSlideDownOut {
+  0% {
+    opacity: 1;
+    max-height: 50px;
+    transform-origin: center top;
+  }
+  100% {
+    opacity: 0;
+    max-height: 0px;
+    transform-origin: center top;
+  }
+}
+
+@keyframes wenvuSlideRightIn {
+  0% {
+    opacity: 0;
+    max-width: 0;
+    transform-origin: left center;
+  }
+  100% {
+    opacity: 1;
+    max-width: 50px;
+    transform-origin: left center;
+  }
+}
+
+@keyframes wenvuSlideRightOut {
+  0% {
+    opacity: 1;
+    max-width: 50px;
+    transform-origin: right center;
+  }
+  100% {
+    opacity: 0;
+    max-width: 0;
+    transform-origin: right center;
+  }
+}
+
+.fade-enter-active {
+  animation-duration: 0.1s;
+  animation-timing-function: ease-in-out;
+  animation-name: wenvuSlideDownIn;
+}
+.fade-leave-active {
+  animation-duration: 0.1s;
+  animation-timing-function: ease-in-out;
+  animation-name: wenvuSlideDownOut;
+}
+
+.fade-right-enter-active {
+  animation-duration: 0.1s;
+  animation-timing-function: ease-in-out;
+  animation-name: wenvuSlideRightIn;
+}
+.fade-right-leave-active {
+  animation-duration: 0.1s;
+  animation-timing-function: ease-in-out;
+  animation-name: wenvuSlideRightOut;
+}
+
+.component-fade-enter-active,
+.component-fade-leave-active {
+  transition: opacity 0.1s ease;
+}
+
+.component-fade-enter,
+.component-fade-leave-to {
+  opacity: 0;
+}
