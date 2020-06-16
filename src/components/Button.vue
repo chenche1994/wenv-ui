@@ -61,6 +61,7 @@ export default {
     onClick() {
       if (!this.disabled) {
         this.$emit('on-click');
+        console.log(222);
       }
     },
   },
