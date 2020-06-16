@@ -62,10 +62,6 @@
     "vue": "^2.6.11",
     "xml-loader": "^1.2.1"
   },
-  "gitHooks": {
-    "pre-commit": "lint-staged",
-    "commit-msg": "commitlint -e -V"
-  },
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
